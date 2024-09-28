@@ -11,18 +11,7 @@ let results = [];
 nameBtn.addEventListener('click', () => {
     const nameValue = nameInput.value;
 
-    if(nameValue){
-        result.classList.remove('hidden');
-        errorMsg.classList.add('hidden');
-        infos = [nameValue, 1];
-        saveInfos(infos);
-
-    } else{
-        result.classList.add('hidden');
-        errorMsg.classList.toggle('hidden');
-    };
-
-/*     fetch("https://api.agify.io?name=" + nameValue)
+    fetch("https://api.agify.io?name=" + nameValue)
     .then((reponse) => reponse.json())
     .then((data) => {
         if(nameValue){
@@ -40,7 +29,7 @@ nameBtn.addEventListener('click', () => {
             result.classList.add('hidden');
             errorMsg.classList.toggle('hidden');
         };
-    }); */
+    });
 });
 
 function saveInfos(infos){
