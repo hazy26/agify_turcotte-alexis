@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background-color: #E8F7EE;
+    color: #0D160B;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+header, footer{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 1.5rem;
+    padding-top: 12rem;
+}
+
+footer p{
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+h1{
+    font-size: 3.6rem;
+    font-weight: 200;
+    letter-spacing: 8px;
+}
+
+h2{
+    font-size: 2.6rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+h2 strong{
+    font-weight: 400;
+}
+
+.history__container{
+    position: relative;
+}
+
+.history__btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+
+.input__container{
+    box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4rem;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    width: fit-content;
+}
+
+.input__name{
+    background-color: #E8F7EE;
+    border: 1.5px solid #0D160B;
+    border-radius: 2rem 0 0 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    height: 48px;
+    letter-spacing: 1px;
+    padding: 1rem;
+    width: 420px;
+}
+
+.input__btn{
+    cursor: pointer;
+}
+
+.input__btn svg{
+    background-color: #0D160B;
+    border-radius: 0 2rem 2rem 0;
+    color: white;
+    height: 48px;
+    padding: .6rem;
+    width: 54px;
+}
+
+.result{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-top: 1rem;
+}
+
+.result span{
+    font-weight: 500;
+}
+
+.results__list{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-weight: 500;
+    gap: 1.5rem;
+    letter-spacing: .5px;
+    padding: 1rem 1rem 1rem 3rem;
+    position: absolute;
+}
+
+.errorMsg{
+    color: rgb(162, 22, 22);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.hidden{
+    display: none;
+}
